@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import { BrowserRouter as Router,Route } from 'react-router-dom';
 import Login from '../src/web/login.js';
+import First from '../src/web/first.js';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
@@ -15,6 +16,7 @@ ReactDOM.render(
 			 <div>
 			 	 <Route path="/App" component={App}/>
 			 	 <Route path="/login" component={Login}/>
+				 <Route path="/first" component={First}/>
 			 </div>
 			
 		</Router>
