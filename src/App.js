@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
+import {Link} from 'react-router-dom';
 import './App.css';
 
 class App extends Component {
@@ -11,15 +12,9 @@ class App extends Component {
           <p>
             Edit <code>src/App.js</code> and save to reload.
           </p>
-          <a
-            className="App-link"
-            // href="https://reactjs.org"
-            href="web/login.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
+          <Link to="/login">
+              <div>去登陆</div>
+          </Link>
         </header>
       </div>
     );

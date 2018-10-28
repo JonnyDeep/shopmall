@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 
-class Login extends Component{
+class First extends Component{
     render(){
         return(
             <div>
-                hollo,world
+                首页首页
             </div>
         );
     }
 }
 
-export default Login;
+export default First;
