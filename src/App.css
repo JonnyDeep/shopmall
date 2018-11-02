@@ -30,3 +30,216 @@
     transform: rotate(360deg);
   }
 }
+
+.iconText{
+  margin-right:5px
+}
+
+.headWrap{
+  height: 130px;
+}
+
+.headleft{
+  float: left;
+  height: 130px;
+  width: 25%;
+}
+
+.headleft .center{
+  width: 100px;
+  height: 100px;
+  margin:0 auto;
+}
+
+.headleft .center img{
+  width: 130px;
+  height: 130px;
+}
+.clear{
+  clear: both;
+}
+.searchWrap{
+  float: left;
+  height: 100px;
+  width: 50%;
+}
+
+.searchWrap .center{
+  width:600px;
+  padding-top:30px;
+  margin: 0 auto;
+}
+.headright{
+  float: right;
+  height: 130px;
+  width: 25%;
+}
+
+.headright .center{
+  width: 130px;
+  height: 130px;
+  margin:0 auto;
+}
+
+/* ul li以横排显示 */
+
+/* 所有class为menu的div中的ul样式 */
+div.navmenu{
+  text-align: center;
+  margin: 0 auto;
+  width: 85%;
+  height: 30px;
+  background: -webkit-linear-gradient(to left,#ff5000,#ff9000,#ff5000); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(to left,#ff5000,#ff9000,#ff5000); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(to left,#ff5000,#ff9000,#ff5000); /* Firefox 3.6 - 15 */
+  background: linear-gradient(to left,#ff5000,#ff9000,#ff5000); /* 标准的语法 */
+}
+div.navmenu ul
+{ 
+    margin-left: 100px;
+    width: 85%;
+    list-style:none; /* 去掉ul前面的符号 */
+    margin: 0 auto; /* 与外界元素的距离为0 */
+    padding: 0px; /* 与内部元素的距离为0 */
+    width: auto; /* 宽度根据元素内容调整 */
+    text-align: center;
+}
+/* 所有class为menu的div中的ul中的li样式 */
+div.navmenu ul li
+{
+  
+    float:left; /* 向左漂移，将竖排变为横排 */
+    color: white;
+    width:80px;
+    line-height: 30px;
+}
+/* 所有class为menu的div中的ul中的a样式(包括尚未点击的和点击过的样式) */
+div.navmenu ul li a, div.navmenu ul li a:visited
+{
+    cursor: pointer;
+    /* background-color: #465c71; 背景色 */
+    /* border: 1px #4e667d solid; 边框 */
+    color: white; 
+    display: block; /* 此元素将显示为块级元素，此元素前后会带有换行符 */
+    line-height: 1.35em; /* 行高 */
+    padding: 4px 20px; /* 内部填充的距离 */
+    text-decoration: none; /* 不显示超链接下划线 */
+    white-space: nowrap; /* 对于文本内的空白处，不会换行，文本会在在同一行上继续，直到遇到 <br> 标签为止。 */
+}
+/* 所有class为menu的div中的ul中的a样式(鼠标移动到元素中的样式) */
+div.navmenu ul li a:hover
+{
+    cursor: pointer;
+    /* background-color: #bfcbd6; 背景色 */
+    /* color: #465c71; 文字颜色 */
+    text-decoration: none; /* 不显示超链接下划线 */
+}
+/* 所有class为menu的div中的ul中的a样式(鼠标点击元素时的样式) */
+div.navmenu ul li a:active
+{
+    cursor: pointer;
+    /* background-color: #465c71; 背景色 */
+    color: #cfdbe6; /* 文字颜色 */
+    text-decoration: none; /* 不显示超链接下划线 */
+}
+
+.thematicmarket{
+  float: left;
+  width:200px;
+  height: 400px;
+  border-left:1px solid #ff5000;
+  border-right:1px solid #ff5000;
+  border-bottom:1px solid #ff5000;
+}
+
+.thematicmarket .head{
+  height: 30;
+  margin: 0px;
+  color:white;
+  line-height: 30px;
+  background: -webkit-linear-gradient(to left,#ff5000,#ff9000,#ff5000); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(to left,#ff5000,#ff9000,#ff5000); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(to left,#ff5000,#ff9000,#ff5000); /* Firefox 3.6 - 15 */
+  background: linear-gradient(to left,#ff5000,#ff9000,#ff5000); /* 标准的语法 */
+}
+.thematicmarket .body{
+  border:1px solid #ff5000;
+}
+
+.Carouselbody{
+
+  float: left;
+  width:520px;
+  height: 280px;
+}
+.Carousel{
+  width: 520px;
+  height: 280px;
+}
+.jinritui{
+  float: left;
+}
+.rightlogin{
+  float: left;
+  width: 194px;
+  height: 370px;
+  border: 1px solid darkblue;
+}
+
+.divcss5{ 
+  margin:20px auto;
+  height: 45px;
+  width: 45px;
+} 
+.divcss5 img{ 
+  height: 45px;
+  width: 45px;
+  border-radius:50%
+} 
+
+.hitext{
+  text-align: center;
+  line-height: 20px;
+  font-weight: 300;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.linkspan{
+  color: white;
+  background:#ff5000;
+  height: 40px;
+  width: 100px;
+  padding: 8px 15px 8px 15px;
+  border-radius: 15%;
+  margin-right: 10px;
+}
+
+.btngroup{
+  width:250px;
+  margin: 10px 0 0 30px;
+}
+
+.tabs{
+  font-size: 10px;
+  margin-left: -30px;
+  width:194px;
+}
+
+.tabright ul{
+  margin-top:10px;
+  margin-left: -22px;
+  list-style: none;
+  font-size: 12px;
+}
+
+.warnning{
+  background: #ffe4dd;
+  color:#f40;
+  height: 26px;
+  text-align: center;
+  width:194px;
+  margin-top:20px;
+  line-height: 26px;
+  font-size:12px;
+  margin-left: -30px;
+}

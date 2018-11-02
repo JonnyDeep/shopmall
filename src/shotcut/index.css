@@ -1,0 +1,13 @@
+.rightrNav{
+    float:right;
+}
+
+.rightrNavline{
+    float:right;
+    color: lightgrey;
+    line-height: 50px;
+}
+
+.iconText{
+    margin-right: 5px;
+}

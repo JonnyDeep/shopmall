@@ -4,8 +4,9 @@ import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap/dist/css/bootstrap-theme.css'
 import './index.css';
 import { BrowserRouter as Router,Route } from 'react-router-dom';
-import Login from '../src/web/login.js';
+import Login from '../src/login/login.js';
 import First from '../src/web/first.js';
+import ShortCut from '../src/shotcut/index.js';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
@@ -16,6 +17,7 @@ import * as serviceWorker from './serviceWorker';
 ReactDOM.render(
 		<Router>
 			 <div>
+				 <Route path="/ShortCut" component={ShortCut}/>
 			 	 <Route path="/App" component={App}/>
 			 	 <Route path="/login" component={Login}/>
 				 <Route path="/first" component={First}/>

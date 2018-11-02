@@ -314,13 +314,13 @@ class Login extends Component{
                     Copyright © 2004-2018  商城 Shopmall.com 版权所有
                 </div>
               </div>
-             
+{/*              
                 hollo,world
                 <Link to="/first">
                     <div>to first</div>
                 </Link>
                 <SubmitButton value="hello word"/>  
-                <RequestStu/>
+                <RequestStu/> */}
             </div>
         );
     }

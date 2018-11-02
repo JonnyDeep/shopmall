@@ -1,0 +1,195 @@
+div.menu{
+    height: 20px;
+
+}
+
+div.menu ul{
+    list-style: none;
+    margin:0px;
+    padding:0px;
+    width: auto;
+   
+}
+
+div.menu ul li{
+    float: left;
+    margin-left: 5px;
+
+}
+
+div.menu ul li:last-child{
+    float:right;
+
+}
+
+.spanli{
+    margin-left: 5px;
+    color:lightgray;
+}
+
+.loginPanel{
+    width:346px;
+}
+
+.namePasswordPanel{
+    width:315px;
+}
+.qrcode{
+    height: 200px;
+    width: 200px;
+    margin:0 auto;
+}
+
+.loginMehtod{
+    height: 15px;
+    margin: 0 auto;
+}
+
+.loginhr{
+    margin: 20px 0 20px -15px;
+    width:346px;
+}
+.loginMehtod span{
+   color:lightgray;
+   float:right;
+}
+.loginMehtodspan{
+    float: left;
+    margin-left: 50px;
+    width:30%;
+}
+
+.loginMehtod:hover{
+    cursor: pointer;
+}
+
+.regist{
+    color:red;
+}
+
+.tophead{
+    margin-top:15px;
+    height:60px;
+}
+
+.beaner span{
+    float:right;
+    width:20%;
+    color:red;
+    margin-top: 35px;
+}
+.beaner{
+    height: 60px;
+    margin: 0 auto;
+    width:800px;
+}
+.beaner img{
+    float: left;
+    height: 60px;
+    width: 15%;
+}
+
+.beaner h3{
+    height: 60px;
+    width:40%;
+    float: left;
+    margin: 0px 0 0 0px;
+    padding-top: 15px;
+    padding-left: 15px;
+}
+
+.content{
+    height: 600px;
+    width: 100%;   
+    background-color: #762bc3;
+}
+
+.backgroundContent{
+    margin: 0 auto;
+    height: 600px;
+    width: 990px;
+    background: url('../images/loginbackground.jpg') no-repeat;
+    background-position: center center;
+}
+
+.login{
+    float: right;
+    margin-top:60px;
+    
+}
+
+.tips{
+    margin:15px 0 0 0;
+    background-color:#fff8f0;
+    text-align: center;
+    height: 39px;
+    color: #999;
+    font: 12px/150% Arial,Verdana,"\5b8b\4f53";
+    padding-top:10px;
+}
+
+.glyphspn{
+    margin-right: 4px;
+}
+
+.pannelhaedFont{
+    
+    font: 12px/150% Arial,Verdana,"\5b8b\4f53";
+}
+
+.pannelhaedFont span{
+    color:#999;
+}
+
+.bottom{
+   
+   margin-top:20px;
+   height: 86px;
+}
+
+.link{
+    width: 990px;
+    height: 86;
+    margin: 0 auto;
+}
+
+div.footermenu{
+    height: 20px;
+
+}
+
+div.footermenu ul{
+    list-style: none;
+    margin:0px;
+    padding:0px;
+    width: auto;
+   
+}
+
+div.footermenu ul li{
+    float: left;
+    margin-left: 5px;
+
+}
+
+.footerspanli{
+    margin-left: 13px;
+    margin-right: 10px;
+    color:lightgray;
+}
+
+.LinkSpan{
+    color:#666;
+    font-family: Arial, Verdana, 宋体;
+    font-size: 12px;
+}
+
+.copyright{
+    padding-top:20px;
+    width: 990px;
+    margin: 0 auto;
+    text-align: center;
+    color:#666;
+    font-family: Arial, Verdana, 宋体;
+    font-size: 12px;
+}
