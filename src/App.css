@@ -37,6 +37,8 @@
 
 .headWrap{
   height: 130px;
+
+
 }
 
 .headleft{
@@ -87,7 +89,7 @@
 div.navmenu{
   text-align: center;
   margin: 0 auto;
-  width: 85%;
+  width: 1074px;
   height: 30px;
   background: -webkit-linear-gradient(to left,#ff5000,#ff9000,#ff5000); /* Safari 5.1 - 6.0 */
   background: -o-linear-gradient(to left,#ff5000,#ff9000,#ff5000); /* Opera 11.1 - 12.0 */
@@ -243,3 +245,36 @@ div.navmenu ul li a:active
   font-size:12px;
   margin-left: -30px;
 }
+
+.bodycss{
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.app{
+  width: 190px;
+  margin-left: -25px;
+  padding: 0px;
+}
+
+.app table{
+  width: 100%;
+}
+
+.app table tr{
+  width: 100%;
+}
+
+.app table tr td{
+  width: 25%;
+  padding-top: 10px;
+}
+
+.app table tr td img{
+  cursor: pointer;
+}
+.app table tr td img:hover{
+  transform: scale(1.4);
+}
+
+

@@ -1,0 +1,195 @@
+.bbody{
+    width:80%;
+    margin: 0 auto;
+}
+
+.title{
+    color: red
+}
+
+.buyhead{
+    margin-top: 15px;
+    height: 40px;
+    width: 100%;
+    background-color: #f1f1f1;
+}
+
+.buyhead .item{
+    margin-top: 10px;
+    float: left;
+}
+
+.buyhead .check-box{
+    padding-left: 10px;
+    
+    width: 133px;
+    height: 25px;
+}
+
+.buyhead .check-box .span{
+    float: right;
+    line-height: 18px;
+    padding-right: 75px;
+    font: 13px/150% tahoma,arial,Microsoft YaHei,Hiragino Sans GB,"\u5b8b\u4f53",sans-serif;
+    -webkit-font-smoothing: antialiased;
+    color: #666;
+}
+
+
+.buyhead .t-goods{
+    
+    font: 13px/150% tahoma,arial,Microsoft YaHei,Hiragino Sans GB,"\u5b8b\u4f53",sans-serif;
+    -webkit-font-smoothing: antialiased;
+    color: #666;
+    width: 208px;
+    height: 25px;
+}
+
+.buyhead .t-props{
+    
+    
+    width: 170px;
+    height: 25px;
+}
+
+.buyhead .t-price{
+    text-align: right;
+    padding-right: 40px;
+    width: 160px;
+    height: 25px;
+    font: 13px/150% tahoma,arial,Microsoft YaHei,Hiragino Sans GB,"\u5b8b\u4f53",sans-serif;
+    -webkit-font-smoothing: antialiased;
+    color: #666;
+}
+
+.buyhead .t-quantity{
+    text-align:center;
+    width: 80px;
+    height: 25px;
+    font: 13px/150% tahoma,arial,Microsoft YaHei,Hiragino Sans GB,"\u5b8b\u4f53",sans-serif;
+    -webkit-font-smoothing: antialiased;
+    color: #666;
+}
+
+.buyhead .t-sum{
+    text-align: right;
+    padding-right: 40px;
+    width: 140px;
+    height: 25px;
+    font: 13px/150% tahoma,arial,Microsoft YaHei,Hiragino Sans GB,"\u5b8b\u4f53",sans-serif;
+    -webkit-font-smoothing: antialiased;
+    color: #666;
+}
+
+.buyhead .t-action{
+    width:75px;
+    height: 25px;
+    font: 13px/150% tahoma,arial,Microsoft YaHei,Hiragino Sans GB,"\u5b8b\u4f53",sans-serif;
+    -webkit-font-smoothing: antialiased;
+    color: #666;
+}
+
+.allcheck{
+    float: left;
+    padding-left: 10px;
+}
+
+.cell{
+    float: left;
+}
+
+.singleCheck{
+    padding-left: 10px;
+    width: 45px;
+}
+
+.pp-img{
+    width: 80px;
+    height: 80px;
+    float: left;
+}
+
+.g-item{
+    width: 300px;
+}
+
+.p-props{
+    width: 150px;
+    padding-left: 40px;
+}
+
+.p-price{
+    width: 190px;
+    text-align: right;
+    padding-right: 40px;
+}
+
+.p-quantity{
+    width:80px;
+}
+
+.p-sum{
+    width: 130px;
+    text-align: right;
+    padding-right: 30px;
+}
+
+.p-sub{
+    text-align: center;
+    width: 17px;
+    height: 22;
+    float: left;
+    border-left: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    
+}
+
+.tx-num{
+    width: 46px;
+    height: 22px;
+    float: left;
+    padding-left: 20px;
+    border: 1px solid #ccc;
+}
+
+.p-add{
+    text-align: center;
+    width: 17px;
+    height: 22;
+    float: left;
+    border-right: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.p-action{
+
+}
+
+
+.p-action:hover{
+    cursor: pointer;
+}
+
+.goods{
+    background-color: #fff4e8;
+    height: 80px;
+    padding-top:10px; 
+}
+
+.myhr{
+    width: 100%;
+    margin: 0px;
+    height: 2px;
+    color: #c1c1c1;;
+}
+
+.buybar{
+    height: 50px;
+    border: 1px solid #c1c1c1;
+}
+
+.buybar .checkall{
+    float: left;
+}

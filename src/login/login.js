@@ -123,7 +123,7 @@ const loginbtnCss={
 class NamePassWordLogin extends Component{
     constructor(props){
         super(props);
-        this.sate={
+        this.state={
             userName:"",
             passWord:""
         }
@@ -158,7 +158,7 @@ class NamePassWordLogin extends Component{
             }
         }).then(data=>{
             console.log(data);
-            this.setState({test:data});
+            // window.location.href="/app";
         }).catch((err)=>{
             console.log(err);
         })

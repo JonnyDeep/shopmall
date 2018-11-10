@@ -1,0 +1,373 @@
+.body{
+    width:1210px;
+    margin: 0 auto;
+}
+
+.body .head{
+    width:100%;
+    height: 100px;
+    /* border: 1px solid black; */
+}
+
+.head .logo{
+    width:150px;
+    height:98px;
+    float: left;
+}
+
+.head .searchBtn{
+    padding-top: 30px;
+    padding-left: 100px;
+    width:850px;
+    height:98px;
+    float: left;
+}
+
+.head .shoppingCar{
+    width: 150px;
+    height: 98px;
+    float: left;
+    margin-left: 38px;
+}
+
+.head .shoppingCar .shopcarBtn{
+    margin-top: 35px;
+}
+
+.head .shoppingCar .shopcarBtn .spanCss{
+    padding: 7px 28px 7px 19px;
+    background-color:#F9F9F9;
+    border: 1px solid #DFDFDF;
+    color: red;
+}
+
+.head .shoppingCar .shopcarBtn .spanCss a{
+    color: red;
+    font: 13px/150% tahoma,arial,Microsoft YaHei,Hiragino Sans GB,"\u5b8b\u4f53",sans-serif;
+    font-weight: 10px;
+}
+
+.head .shoppingCar .shopcarBtn .spanCss a:hover{
+   text-decoration: none;
+   cursor: pointer;
+}
+
+.goodsTable{
+    width: 1040px;
+    height: 2800px;
+    padding: 0px;
+    overflow: auto;
+    /* border: 1px solid black; */
+    float: right;
+}
+
+.goodsTable ul{
+    padding: 0px;
+  
+    list-style: none;
+}
+
+.goodsTable ul li{
+    
+    margin: 0px 20px 0px 0px;
+    width: 240px;
+    height: 466px;
+    /* border: 1px solid black; */
+    float: left;
+}
+
+.goodsTable ul li:hover{
+ 
+    border: 1px solid #c0c0c0;
+}
+
+
+.itemwrap{
+    width: 220px;
+    height: 444px;
+    margin: 11px auto;
+}
+
+.itemwrap .p-img{
+    width: 220px;
+    margin: 0 auto;
+}
+
+.itemwrap .zoom{
+    height: 35px;
+}
+
+.itemwrap .zoom ul{
+    height: 35px;
+    list-style: none;
+}
+
+.itemwrap .zoom ul li{
+    height: 30px;
+    width: 30px;
+    float: left;
+}
+
+.itemwrap .zoom ul li{
+   margin-top:5px;
+}
+
+.itemwrap .zoom ul li:hover{
+    border: 1px solid red;
+ }
+.itemwrap .zoom ul li img{
+    margin-left:2px;
+    margin-top: 2px;
+ }
+
+.itemwrap .price{
+    width:220px;
+    height: 40px;
+    color: red;
+    font-size: 22px;
+    
+}
+
+.itemwrap .price strong{
+    line-height: 40px;
+    font-weight: 400;
+    font-family: Verdana;
+}
+
+.itemwrap .pname{
+    height: 40px;
+}
+
+.itemwrap .pname a{
+    font: 12px/150% tahoma,arial,Microsoft YaHei,Hiragino Sans GB,"\u5b8b\u4f53",sans-serif;
+    color: #666;
+}
+
+.itemwrap .pname a:hover{
+    text-decoration: none;
+    color: red;
+    cursor: pointer;
+}
+
+.itemwrap .commit{
+    margin-top:5px;
+    height: 18px;
+    color: #666;
+    font: 12px/150% tahoma,arial,Microsoft YaHei,Hiragino Sans GB,"\u5b8b\u4f53",sans-serif;
+}
+
+.itemwrap .commit strong{
+    color: #5a80ff;
+    font-weight: 700;
+}
+
+.itemwrap .shop {
+    margin-top:5px;
+    height: 18px;
+   
+}
+
+.itemwrap .shop a{
+    color: #999;
+    font: 12px/150% tahoma,arial,Microsoft YaHei,Hiragino Sans GB,"\u5b8b\u4f53",sans-serif;
+    -webkit-font-smoothing: antialiased;
+    line-height: 18px;
+}
+
+.itemwrap .shop a:hover{
+   text-decoration: none;
+   cursor: pointer;
+}
+
+.itemwrap .shop img{
+    margin-left: 5px;
+}
+
+.itemwrap .icon{
+    height: 20px;
+    margin-top: 15px;
+    
+
+}
+
+.itemwrap .icon i{
+    color: red;
+    border: 1px solid red;
+    padding: 2px 5px 2px 5px;
+    border-radius: 12%;
+    font: 12px/150% tahoma,arial,Microsoft YaHei,Hiragino Sans GB,"\u5b8b\u4f53",sans-serif;
+}
+
+.hr{
+    margin: 0px;
+    padding:0px;
+   height: 2px;
+    background: red;
+}
+
+.searchTab{
+    width:100%;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 10px;
+    /* border: 1px solid gray; */
+}
+
+.searchTab .searchRow{
+    max-height: 80px;
+    min-height: 30px;
+    height: auto;
+    border-bottom: 0.1px solid #DDD;
+    /* border: 1px solid red; */
+}
+
+
+.searchTab .searchRow .sl-key{
+    background: #f3f3f3;
+    padding-left: 10px;
+    width: 100px;
+    float: left;
+    line-height: 30px;
+    border: 0.1px solid #DDD;
+    font: 12px/250% tahoma,arial,Microsoft YaHei,Hiragino Sans GB,"\u5b8b\u4f53",sans-serif;
+    /* border: 1px solid red; */
+}
+
+.searchTab .searchRow .sl-key strong{
+    font-weight: 700;
+    /* border: 1px solid red; */
+}
+
+.searchTab .searchRow .sl-value{
+    padding-left: 10px;
+    float: left;
+}
+
+
+.searchTab .searchRow .sl-value ul{
+    list-style: none;
+}
+
+.searchTab .searchRow .sl-value ul li{
+    float: left;
+    width: 130px;
+    line-height: 30px;
+}
+.searchTab .searchRow .sl-value ul li a:hover{
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.clear{
+    clear: both;
+}
+
+
+
+
+.advertisement{
+    position: relative;
+    width: 170px;
+    height: 2280px;
+    /* border: 1px solid black; */
+    float: left;
+}
+
+.advertisement .u-ad {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 20px;
+    height: 11px;
+    overflow: hidden;
+    background: url(//misc.360buyimg.com/product/search/1.0.7/css/i/u-ad.gif) no-repeat;
+}
+
+.ad-title{
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 100px;
+    font-size: 14px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 700;
+}
+
+.ad-wrap{
+    margin-top:30px;
+}
+
+.ad-wrap ul{
+    list-style: none;
+    margin-top:30px;
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
+.ad-wrap ul li{
+    width: 170px;
+    height: 270px;
+    /* border: 1px solid black; */
+}
+
+.ad-wrap ul li:hover{
+   border:1px solid #c0c0c0;
+    /* border: 1px solid black; */
+}
+
+.ad-img{
+    width: 160px;
+    height: 160px;
+    /* border: 1px solid rebeccapurple; */
+    margin: 0 auto;
+}
+
+.ad-wrap .price{
+    width: 160px;
+    padding-left: 10px;
+   
+    height: 30px;
+    color: red;
+    font-style: normal;
+    font-size: 15px; 
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.ad-wrap .price strong{
+    line-height: 30px;
+    font-weight: 400;
+    font-family: Verdana;
+}
+
+.ad-wrap .ad-name{
+    color: #666;
+    margin-top: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 12px;
+}
+
+.ad-wrap .ad-name a:hover{
+   text-decoration-line: none;
+   cursor:pointer;
+}
+
+.ad-wrap .ad-name em{
+    color: #666;
+    font-style: normal;
+}
+
+.ad-wrap .ad-discussion{
+    padding-left: 10px;  
+    padding-top:10px;
+    font: 12px/150% tahoma,arial,Microsoft YaHei,Hiragino Sans GB,"\u5b8b\u4f53",sans-serif;
+    -webkit-font-smoothing: antialiased;       
+}
+
+.ad-wrap .ad-discussion em{
+    color: #666;
+    font-style: normal;     
+}

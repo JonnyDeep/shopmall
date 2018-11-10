@@ -5,8 +5,11 @@ import 'bootstrap/dist/css/bootstrap-theme.css'
 import './index.css';
 import { BrowserRouter as Router,Route } from 'react-router-dom';
 import Login from '../src/login/login.js';
-import First from '../src/web/first.js';
+import QRCodeLogin from '../src/web/QRCode.js';
 import ShortCut from '../src/shotcut/index.js';
+import GoodsTable from '../src/goods/index.js';
+import GoodsDetail from '../src/gooddetail/index.js'
+import BuyPage from '../src/buy/index.js'
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
@@ -20,7 +23,10 @@ ReactDOM.render(
 				 <Route path="/ShortCut" component={ShortCut}/>
 			 	 <Route path="/App" component={App}/>
 			 	 <Route path="/login" component={Login}/>
-				 <Route path="/first" component={First}/>
+				 <Route path="/QRCodeLogin" component={QRCodeLogin}/>
+				 <Route path="/GoodsTable" component={GoodsTable}/>
+				 <Route path="/GoodsDetail" component={GoodsDetail}/>
+				 <Route path="/Buy" component={BuyPage}/>
 			 </div>
 			
 		</Router>
