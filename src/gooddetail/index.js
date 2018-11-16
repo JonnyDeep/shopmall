@@ -207,11 +207,14 @@ class GoodsTab extends Component{
     }
 }
 class GoodsDetail extends Component{
-    constructor(props){
-        super(props);
+    constructor(props,context){
+        super(props,context);
+        
     }
 
     render(){
+        const params = this.props.location.state.goodsId; 
+        console.log(params)
         return(
         <div>
             <ShortCut></ShortCut>
