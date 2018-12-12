@@ -10,6 +10,7 @@ import ShortCut from '../src/shotcut/index.js';
 import GoodsTable from '../src/goods/index.js';
 import GoodsDetail from '../src/gooddetail/index.js'
 import BuyPage from '../src/buy/index.js'
+import BuySuc from '../src/buyResult/index.js'
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
@@ -27,6 +28,7 @@ ReactDOM.render(
 				 <Route path="/GoodsTable" component={GoodsTable}/>
 				 <Route path="/GoodsDetail" component={GoodsDetail}/>
 				 <Route path="/Buy" component={BuyPage}/>
+				 <Route path="/BuySuc" component={BuySuc}/>
 			 </div>
 			
 		</Router>

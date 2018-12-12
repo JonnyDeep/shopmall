@@ -1,0 +1,21 @@
+.leftUser{
+    float: left;
+    width:100px;
+}
+
+
+
+.user{ 
+    margin:20px auto;
+    height: 45px;
+    width: 45px;
+} 
+.user img{ 
+    height: 45px;
+    width: 45px;
+    border-radius:50%
+} 
+
+.contentWrap{
+    padding: 20px;
+}

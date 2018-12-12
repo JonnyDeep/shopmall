@@ -2,7 +2,10 @@ global.goodsItem={
     goodsId:"",
     goodsNum:"",
     goodsPrice:"",
-    goodsName:""
+    goodsName:"",
+    goodsImage:"",
+    size:"",
+    color:""
 };
 global.seller={
     sellId:"",
@@ -10,6 +13,7 @@ global.seller={
 }
 
 global.shopingcar={
-    seller:new Array()
+    seller:new Array(),
+    goodsItem:new Array()
 };
 

@@ -34,10 +34,22 @@
     margin-top: 35px;
 }
 
+.head .shoppingCar .shopcarBtn:hover{
+    cursor: pointer;
+}
+
+
 .head .shoppingCar .shopcarBtn .spanCss{
     padding: 7px 28px 7px 19px;
     background-color:#F9F9F9;
     border: 1px solid #DFDFDF;
+    color: red;
+}
+
+.head .shoppingCar .shopcarBtn .spanCss:active{
+    padding: 7px 28px 7px 19px;
+    background-color:#F9F9F9;
+    border: 1px solid red;
     color: red;
 }
 
@@ -51,6 +63,7 @@
    text-decoration: none;
    cursor: pointer;
 }
+
 
 .goodsTable{
     width: 1040px;

@@ -44,6 +44,8 @@ class BuyItemTable extends Component{
     }
 
     render(){
+        const param = this.props.param;
+        
         return(
             <div>
                  <div className='allcheck'>
@@ -51,7 +53,9 @@ class BuyItemTable extends Component{
                     </div>
                    
                     <div>
-                        <a>店名</a>
+                        <a>
+                            nike {param.sellerId}                    
+                        </a>
                     </div>
                 
                     <hr className='myhr'></hr>
@@ -60,43 +64,46 @@ class BuyItemTable extends Component{
                     <div>
                         <div className='cell'>
                             <div className='singleCheck'>
-                                <input type='checkbox'></input>
+                                <input type='checkbox' name="itemCheck"></input>
                             </div>
                         </div>
                         <div className='cell'>
                            <div className='g-item'>
                            <div className='pp-img'>
-                                <img></img>
+                           
+                                <img src={'http://localhost:8081/file/'+param.goodsImage}></img>
                             </div>
                             <div className='p-goodsname'>
-                                商品名
+                                {
+                                    param.goodsName
+                                }
                             </div>
                            </div>
                         </div>
                         <div className='cell'>
                             <div className='p-props'>
-                                <p>颜色</p>
-                                <p>尺码</p>
+                                <p>颜色:{param.color}</p>
+                                <p>尺码:{param.size}</p>
                             </div>
                         </div>
 
                         <div className='cell'>
                             <div className='p-price'>
-                                11
+                                ￥{param.goodsPrice}
                             </div>
                         </div>
 
                         <div className='cell'>
                             <div className='p-quantity'>
                                 <div className='p-sub'>-</div>
-                                <input type='text' className='tx-num'></input>
+                                <input type='text' className='tx-num' value={param.goodsNum}></input>
                                 <div className='p-add'>+</div>
                             </div>
                         </div>
 
                         <div className='cell'>
-                            <div className='p-sum'>
-                                <strong>￥1000.00</strong>
+                            <div className='p-sum' ref='sum'>
+                                <strong name='price-sum'>￥{param.goodsNum*param.goodsPrice}</strong>
                             </div>
                         </div>
 
@@ -108,15 +115,7 @@ class BuyItemTable extends Component{
                     </div>
                 </div>
 
-                <div className='buybar'>
-                    <div className='checkall'>
-                        <input type='checkbox'/>
-                    </div>
-                   
-                    <div>
-                        <a>店名</a>
-                    </div>
-                </div>
+               
             </div>
         );
     }
@@ -124,9 +123,95 @@ class BuyItemTable extends Component{
 class ItemsList extends Component{
     constructor(props){
         super(props);
+        this.state={
+            count:0,
+        }
+    }
+
+    caculate(){
+        console.log("ok");
+        var obj=document.getElementsByName("price-sum");
+        var checkObj = document.getElementsByName("itemCheck");
+        let Allcount=0;
+        console.log(checkObj[0].checked)
+        for(var i=0;i<obj.length;i++)
+        {
+            if(checkObj[i].checked){
+
+                Allcount = Allcount+parseFloat(obj[i].childNodes[1].nodeValue);
+                console.log("allcount:"+Allcount)
+            }
+        }
+        this.setState({
+            count:Allcount
+        },()=>{
+            console.log(this.state.count)
+        });
+        var paramdata = [];
+        var orderGoodsVo = {};
+        orderGoodsVo.sellId = 1;
+        var goodsElemData = []
+        var goodsElems = {};
+        goodsElems.goodsId=1;
+        goodsElems.num=2;
+        goodsElems.price=99.0;
+        goodsElemData.push(goodsElems);
+        var goodsElems1 = {};
+        goodsElems1.goodsId=2;
+        goodsElems1.num=2;
+        goodsElems1.price=99.0;
+        goodsElemData.push(goodsElems1);
+        orderGoodsVo.goodsElems=goodsElemData;
+        paramdata.push(orderGoodsVo);
+        var orders = {}
+        orders.userId = 1;
+        orders.goodsElems=paramdata;
+   
+ 
+        fetch('http://127.0.0.1:8081/orders/insertOrder/'+1,{
+            method:'POST',
+            headers:{
+                // "content-Type": "text/html;charset=UTF-8",
+                "content-Type":"application/json;charset=UTF-8",
+            },
+            body:JSON.stringify(orders),
+            credentials:'include',
+            mode:'cors',
+            cache:'default'
+        }).then((response)=>{
+            // console.log(response);
+            // console.log(response.ok);
+            if(response.ok){
+                return response.json();
+                // console.log(response.text());
+            }else{
+                console.log(response.status);
+            }
+        }).then(data=>{
+            
+            this.setState({data:data.data});
+            // console.log(JSON.stringify(this.state.data.rows))
+            // console.log(this.state.data.rows.length)
+            // const ullist = this.state.data.rows.map((row)=>{
+              
+            // });
+        }).catch((err)=>{
+            console.log(err);
+        })
     }
 
     render(){
+        const params = this.props.params;
+        console.log("-->itemlist param:"+JSON.stringify(params));
+        const table = new Array();
+        if(params.length>0)
+        {
+            console.log("construct BuyItemTable")
+            for(var i=0;i<params.length;i++)
+            {
+                table[i] = <BuyItemTable param={params[i]} key={i}></BuyItemTable>
+            }
+        }
         return(
             <div>
                 <div>
@@ -151,25 +236,58 @@ class ItemsList extends Component{
                         <div className='item t-action'>操作</div>
                     </div>
 
-                    <BuyItemTable></BuyItemTable>
+                    {/* <BuyItemTable></BuyItemTable> */}
+                    {table}
+                    <div className='calculateBar'>
+                        <div className='calculate'>
+                            <Button bsStyle='danger' className='buy-btn' onClick={()=>{this.caculate()}}>去结算</Button>
+                        </div>
+                        <div className='total'>
+                            合计
+                        </div>
+                        
+                    </div>
                 </div>
             </div>
         );
     }
 }
 class BuyPage extends Component{
-    constructor(props){
-        super(props);
+    constructor(props,context){
+        super(props,context);
+        this.state={
+
+        }
+        
     }
 
+    defaultChange(){
+
+    }
     render(){
+        
+        console.log("-->buy param:"+JSON.stringify(this.props.location.state.goodsItem));
+        var shopcar = new Array();
+        shopcar = this.props.location.state.goodsItem;
+        const itemArray = new Array();
+        console.log(itemArray.length)
+        if(shopcar.length>0)
+        {
+
+            itemArray[0] = <ItemsList key={0} params={shopcar} ></ItemsList>
+
+        }
+        console.log(itemArray.length)
+        document.getElementById("total")
         return(
             <div>
                 <ShortCut></ShortCut>
                 
                 <div className='bbody'>
                     <Header></Header>
-                    <ItemsList></ItemsList>
+                    <div className='clear'></div>
+                    {/* <ItemsList></ItemsList> */}
+                    {itemArray}
                    
                 </div>
             </div>

@@ -193,3 +193,19 @@
 .buybar .checkall{
     float: left;
 }
+
+.calculate{
+    float: right;
+}
+
+.total{
+    float: right;
+    width: 150px;
+    padding-top:10px;
+}
+
+.calculateBar{
+    margin-top:15px;
+    border: 1px solid #ccc;
+    height: 48px;
+}
