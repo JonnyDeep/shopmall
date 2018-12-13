@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import { Link } from 'react-router-dom';
 import ShortCut from '../shotcut/index.js';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import PropTypes from 'prop-types';
 import 'react-tabs/style/react-tabs.css';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -121,19 +122,29 @@ class BuyItemTable extends Component{
     }
 }
 class ItemsList extends Component{
-    constructor(props){
-        super(props);
+    static contextTypes={
+        router:PropTypes.object
+    }
+    constructor(props,context){
+        super(props,context);
         this.state={
             count:0,
+            data:{}
         }
     }
 
+    redirect(href){
+        // this.context.router.history.push({pathname:"/GoodsDetail/",state"{}}
+        this.context.router.history.push({pathname:href});
+    }
+
+
     caculate(){
-        console.log("ok");
+        // console.log("ok");
         var obj=document.getElementsByName("price-sum");
         var checkObj = document.getElementsByName("itemCheck");
         let Allcount=0;
-        console.log(checkObj[0].checked)
+        // console.log(checkObj[0].checked)
         for(var i=0;i<obj.length;i++)
         {
             if(checkObj[i].checked){
@@ -189,24 +200,26 @@ class ItemsList extends Component{
             }
         }).then(data=>{
             
-            this.setState({data:data.data});
-            // console.log(JSON.stringify(this.state.data.rows))
-            // console.log(this.state.data.rows.length)
-            // const ullist = this.state.data.rows.map((row)=>{
-              
-            // });
+            this.setState({data:data});
+            
+            if(data.code==="200"){
+                console.log("==>code:"+data.code);
+                this.redirect("/BuySuc");
+            }
         }).catch((err)=>{
             console.log(err);
         })
+
+        // console.log("==>data:"+this.state.data.code);
     }
 
     render(){
         const params = this.props.params;
-        console.log("-->itemlist param:"+JSON.stringify(params));
+        // console.log("-->itemlist param:"+JSON.stringify(params));
         const table = new Array();
         if(params.length>0)
         {
-            console.log("construct BuyItemTable")
+            // console.log("construct BuyItemTable")
             for(var i=0;i<params.length;i++)
             {
                 table[i] = <BuyItemTable param={params[i]} key={i}></BuyItemTable>
@@ -266,18 +279,18 @@ class BuyPage extends Component{
     }
     render(){
         
-        console.log("-->buy param:"+JSON.stringify(this.props.location.state.goodsItem));
+        // console.log("-->buy param:"+JSON.stringify(this.props.location.state.goodsItem));
         var shopcar = new Array();
         shopcar = this.props.location.state.goodsItem;
         const itemArray = new Array();
-        console.log(itemArray.length)
+        // console.log(itemArray.length)
         if(shopcar.length>0)
         {
 
             itemArray[0] = <ItemsList key={0} params={shopcar} ></ItemsList>
 
         }
-        console.log(itemArray.length)
+        // console.log(itemArray.length)
         document.getElementById("total")
         return(
             <div>
